@@ -25,6 +25,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: 🧪 Run tests
+    - name: Run tests
       run: |
-        pytest tests/
+        cd flask-app  # nếu thư mục test nằm trong đây
+        pytest
