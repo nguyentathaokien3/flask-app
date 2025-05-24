@@ -19,7 +19,6 @@ admin.add_view(ModelView(Product, db.session))
 # Tạo CSDL nếu chưa có
 with app.app_context():
     db.create_all()
-
 # Chạy Flask app
 if __name__ == '__main__':
     app.run(debug=True)
